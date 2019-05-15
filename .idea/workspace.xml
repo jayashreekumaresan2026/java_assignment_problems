@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/print_the_item_name.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="97" column="54" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="54" />
+            <state relative-caret-position="274">
+              <caret line="106" column="50" lean-forward="true" selection-start-line="105" selection-start-column="8" selection-end-line="106" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="39">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1403" />
@@ -159,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ItemCostCalculation">
+  <component name="RunManager" selected="Application.Icecream_stall">
     <configuration name="Icecream_stall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Icecream_stall" />
       <module name="java_assignment_problems" />
@@ -198,9 +198,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Icecream_stall" />
         <item itemvalue="Application.ItemCostCalculation" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Icecream_stall" />
       </list>
     </recent_temporary>
   </component>
@@ -219,9 +219,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1403" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22409992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22409992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -235,7 +234,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3319149" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3319149" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.076595746" />
@@ -269,8 +268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/print_the_item_name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="97" column="54" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="54" />
+        <state relative-caret-position="274">
+          <caret line="106" column="50" lean-forward="true" selection-start-line="105" selection-start-column="8" selection-end-line="106" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -279,8 +278,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        <state relative-caret-position="39">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

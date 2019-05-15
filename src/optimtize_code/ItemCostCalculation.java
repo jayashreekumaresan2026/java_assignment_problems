@@ -22,9 +22,9 @@ class ItemMenu {
     }
 
     double salesTaxCalculation() {
-        double total_quantity, sales_tax;
-        sales_tax = (15.00 / 100) + price;
-        total_quantity = quantity * sales_tax;
+        double total_quantity, salesTax;
+        salesTax = (15.00 / 100) + price;
+        total_quantity = quantity * salesTax;
         return total_quantity;
     }
 }
@@ -32,7 +32,6 @@ class ItemMenu {
 class CostCalculation {
     double costCalculation(int quantityInInteger, double costInInteger) {
         double itemCost;
-        System.out.println("Price of the item without sales tax");
         itemCost = quantityInInteger * costInInteger;
         return itemCost;
 
@@ -64,7 +63,7 @@ class ExtractCostQuantityName {
 public class ItemCostCalculation {
     public static void main(String[] args) {
         int i;
-        double totalSalesTax = 0;
+        double totalSalesTax = 0, finalCost;
         ItemMenu[] itemArray = new ItemMenu[3];
         ItemMenu itemList1 = new ItemMenu();
         itemList1.getItemDetail("   Pen", 2, 3);
@@ -83,7 +82,8 @@ public class ItemCostCalculation {
         System.out.print("enter the item name :");
         Scanner keyboard = new Scanner(System.in);
         String sentence = keyboard.nextLine();
-        ExtractCostQuantityName CostQuanName = new ExtractCostQuantityName();
-        CostQuanName.getSentence(sentence);
+        ExtractCostQuantityName costQuanName = new ExtractCostQuantityName();
+        finalCost = totalSalesTax + costQuanName.getSentence(sentence);
+        System.out.print("final_cost  :" + finalCost);
     }
 }
