@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c871fd-4d84-48fa-a0c5-610cb9497954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/print_the_item_name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/print_the_item_name.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/print_the_item_name.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="45" column="1" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="171">
+              <caret line="97" column="54" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="897">
+              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,10 +235,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3319149" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3319149" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.076595746" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.076595746" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -271,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/print_the_item_name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="171">
+          <caret line="97" column="54" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -281,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/optimtize_code/ItemCostCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="897">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
