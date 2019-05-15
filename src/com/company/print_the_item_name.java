@@ -88,7 +88,7 @@ public class print_the_item_name {
         item_array[1] = item_list2;
         item_array[2] = item_list3;
 
-        for (i = 0; i < (item_array.length) - 1; i++) {
+        for (i = 0; i < (item_array.length); i++) {
             System.out.println(item_array[i].getName());
             System.out.println();
             total_sales_tax+=item_array[i].sales_tax_of_the_item();
