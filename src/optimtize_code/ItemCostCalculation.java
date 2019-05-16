@@ -9,6 +9,7 @@ class ItemMenu {
     int quantity;
     double price;
 
+
     void getItemDetail(String name, int quantity, double price) {
         this.name = name;
         this.quantity = quantity;
@@ -20,11 +21,13 @@ class ItemMenu {
 
         System.out.println(name + "   " + quantity + "   " + price + " ");
     }
+}
 
-    double salesTaxCalculation() {
+class SalesTaxCalculator {
+    double salesTaxCalculation(ItemMenu itemMenu) {
         double total_quantity, salesTax;
-        salesTax = (15.00 / 100) + price;
-        total_quantity = quantity * salesTax;
+        salesTax = (15.00 / 100) + itemMenu.price;
+        total_quantity = itemMenu.quantity * salesTax;
         return total_quantity;
     }
 }
@@ -74,16 +77,20 @@ public class ItemCostCalculation {
         itemArray[0] = itemList1;
         itemArray[1] = itemList2;
         itemArray[2] = itemList3;
+        SalesTaxCalculator calculator = new SalesTaxCalculator();
+        totalSalesTax += calculator.salesTaxCalculation(itemList1);
+        totalSalesTax += calculator.salesTaxCalculation(itemList2);
+        totalSalesTax += calculator.salesTaxCalculation(itemList3);
         for (i = 0; i < (itemArray.length); i++) {
             itemArray[i].showItemName();
-            totalSalesTax += itemArray[i].salesTaxCalculation();
         }
-        System.out.println("total " + totalSalesTax);
+        System.out.println("SalesTaxCost " + totalSalesTax);
         System.out.print("enter the item name :");
         Scanner keyboard = new Scanner(System.in);
         String sentence = keyboard.nextLine();
         ExtractCostQuantityName costQuanName = new ExtractCostQuantityName();
         finalCost = totalSalesTax + costQuanName.getSentence(sentence);
         System.out.print("final_cost  :" + finalCost);
+        System.out.println("Additional Toppings");
     }
 }
