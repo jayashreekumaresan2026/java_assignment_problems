@@ -25,7 +25,7 @@ class items_flavour{
     }
 }
 
-public class Icecream_stall {
+public class IcecreamStall {
     public static void main(String[] args) {
         int i;
         items_name object1=new items_name();

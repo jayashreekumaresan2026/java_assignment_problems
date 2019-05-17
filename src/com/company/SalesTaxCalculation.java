@@ -71,7 +71,7 @@ class extract_item_from_list {
 
 }
 
-public class print_the_item_name {
+public class SalesTaxCalculation {
     public static void main(String[] args) {
         int i;
         double final_cost;
