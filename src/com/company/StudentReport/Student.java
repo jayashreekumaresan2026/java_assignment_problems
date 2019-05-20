@@ -14,7 +14,7 @@ public class Student {
     String total;
     String department;
     String Result;
-    String totals;
+
 
     void getDetails() {
         Scanner keyboard = new Scanner(System.in);
@@ -27,44 +27,38 @@ public class Student {
         subject2 = Integer.parseInt(wordArrayList.get(3));
         subject3 = Integer.parseInt(wordArrayList.get(4));
         department = wordArrayList.get(5);
-        totalCalculation();
-        checkReport();
-        findDepartment();
-
     }
 
     void totalCalculation() {
 
-       int totalresult = subject1 + subject2 + subject3;
-        total=Integer.toString(totalresult);
+        int totalresult = subject1 + subject2 + subject3;
+        total = Integer.toString(totalresult);
 
     }
 
-    void checkReport() {
+    String checkTotal() {
         if (subject1 <= 25 || subject2 <= 25 || subject3 <= 25) {
-            totals="0";
-            total=totals.replace("0","-");
             Result = "FAIL";
+            return Result;
         } else {
-           totalCalculation();
+
             Result = "PASS";
+            return  Result;
 
         }
 
     }
-
-    void findDepartment()
-
-    {
-        if (department.equals("cse"))
+    void report(String result){
+        String totals;
+        totals = "0";
+        if (result.equals("FAIL"))
+            total = totals.replace("0", "-");
+        else
         {
-           department="cse";
+            totalCalculation();
         }
-        else {
-            department="eee";
-        }
-
     }
+
 
     void showDetails() {
         System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3);
@@ -77,61 +71,7 @@ public class Student {
     }
 
     void reportStatus() {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total+ "   \t" + Result);
-
-    }
-    void showDepartment() {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total + "   \t" + Result+" \t"+department);
-
-    }
-
-
-    public static void main(String[] args) {
-        Student[] stud = new Student[2];
-        int i;
-        for (i = 0; i < 2; i++) {
-            stud[i] = new Student();
-        }
-        for (i = 0; i < 2; i++) {
-            System.out.print("enter the detail of the student ");
-            stud[i].getDetails();
-
-        }
-        System.out.println("           Student Records with Marks");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3 ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        for (i = 0; i < 2; i++) {
-            stud[i].showDetails();
-        }
-
-        System.out.println();
-        System.out.println("           Student Records With Total ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3    Total");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
-        for (i = 0; i < 2; i++) {
-            stud[i].showDetailsWithTotal();
-        }
-
-        System.out.println();
-        System.out.println("           Student Records With Report ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3    Total  Result");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        for (i = 0; i < 2; i++) {
-            stud[i].reportStatus();
-        }
-
-        System.out.println();
-        System.out.println("           Student Records With Report and Department");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RolNumber   Name   sub1    sub2    sub3    Total  Result  Department");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        for (i = 0; i < 2; i++) {
-            stud[i].showDepartment();
-        }
+        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total + "   \t" + Result);
 
     }
 }
