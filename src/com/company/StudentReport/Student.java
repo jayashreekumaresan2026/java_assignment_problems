@@ -2,6 +2,7 @@ package com.company.StudentReport;
 
 import java.lang.String;
 
+
 public class Student {
     int rollNumber;
     String name;
@@ -10,6 +11,7 @@ public class Student {
     int subject3;
     int total;
     Department department;
+
 
     Student(int rollNumber, String name, int subject1, int subject2, int subject3, Department department) {
         this.rollNumber = rollNumber;
@@ -37,15 +39,5 @@ public class Student {
 
     }
 
-    void showDetails() {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3);
-    }
 
-    void showDetailsWithTotal(int total) {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total);
-    }
-
-    void reportStatus(String total, String result) {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total + "   \t" + result);
-    }
 }
