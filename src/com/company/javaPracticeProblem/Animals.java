@@ -1,5 +1,7 @@
 package com.company.javaPracticeProblem;
 
+import java.util.Scanner;
+
 class Animal {
     int size;
     String breed;
@@ -54,16 +56,28 @@ class Dog extends Animal{
 }
 
 public class Animals {
+    public static void userInput() {
+        Scanner sc = new Scanner(System.in);
+        String str = new String(sc.nextLine());
+    }
     public static void main(String[] args) {
 
-        Dog obj = new Dog();
-        obj.size = 10;
-        obj.breed="national";
-        obj.name="huch";
-        obj.setAction("bark");
+//        Dog obj = new Dog();
+//        obj.size = 10;
+//        obj.breed="national";
+//        obj.name="huch";
+//        obj.setAction("bark");
 //        obj.get_details();
 //        obj.get_details(10,"national","huch","bark");
-        obj.show_details();
+//        obj.show_details();
+
+        String[] strings = new String[3];
+        userInput();
+
+        for (int i = 0; i < 3; i++) {
+            strings[i] = new String();
+        }
+        System.out.println(strings);
     }
 
 }

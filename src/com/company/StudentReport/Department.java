@@ -1,8 +1,10 @@
 package com.company.StudentReport;
 
 public class Department {
-    String departmentName;
-    String HODName;
+
+
+    private String departmentName;
+    private String HODName;
     int blocks;
 
     Department(String departmentName, String HODName, int blocks) {
@@ -10,4 +12,12 @@ public class Department {
         this.HODName = HODName;
         this.blocks = blocks;
     }
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public String getHODName() {
+        return HODName;
+    }
+
 }
