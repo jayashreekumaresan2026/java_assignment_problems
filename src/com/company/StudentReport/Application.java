@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.lang.String;
 
 
 public class Application {
@@ -37,19 +38,28 @@ public class Application {
     }
 
     public static void main(String[] args) {
+        int total=0;
+        String result=" ";
+        String totals=" ";
         Scanner keyboards = new Scanner(System.in);
-        System.out.println("enter the number of student");
+        System.out.print("enter the number of student :");
         int studentDetails = keyboards.nextInt();
         Student[] students = new Student[studentDetails];
-        String result;
 
         for (int i = 0; i < students.length; i++) {
-            System.out.print("enter the detail of the student ");
+            System.out.print("enter the detail of the student :");
             Student studentDetail = Application.userInput();
             students[i] = studentDetail;
-            students[i].totalCalculation();
-            result = students[i].checkTotal();
-            students[i].report(result);
+            total= students[i].totalCalculation();
+            result = students[i].result();
+            if (result.equals("PASS")) {
+                total= students[i].totalCalculation();
+                totals = Integer.toString(total);
+            } else
+            {
+                totals="-";
+            }
+
 
         }
 
@@ -68,7 +78,7 @@ public class Application {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
         for (int i = 0; i < students.length; i++) {
-            students[i].showDetailsWithTotal();
+            students[i].showDetailsWithTotal(total);
         }
 
         System.out.println();
@@ -77,7 +87,7 @@ public class Application {
         System.out.println(" RollNumber   Name   sub1    sub2    sub3    Total  Result");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         for (int i = 0; i < students.length; i++) {
-            students[i].reportStatus();
+            students[i] .reportStatus(totals,result);
         }
 
 
@@ -93,7 +103,7 @@ public class Application {
             System.out.println("Department :CSE");
             System.out.println("HOD:Chandra");
             for (int i = 0; i < departCSE.size(); i++) {
-                departCSE.get(i).reportStatus();
+                departCSE.get(i).reportStatus(totals,result);
 
             }
         }
@@ -108,7 +118,7 @@ public class Application {
             System.out.println("Department :EEE");
             System.out.println("H0D:Siva");
             for (int i = 0; i < departEEE.size(); i++) {
-                departEEE.get(i).reportStatus();
+                departEEE.get(i).reportStatus(totals,result);
 
             }
         }

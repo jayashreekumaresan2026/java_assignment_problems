@@ -8,61 +8,44 @@ public class Student {
     int subject1;
     int subject2;
     int subject3;
-    String total;
-    String Result;
-    Department department ;
+    int total;
+    Department department;
 
-    Student(int rollNumber,String name,int subject1,int subject2,int subject3,Department department){
-        this.rollNumber=rollNumber;
-        this.name=name;
-        this.subject1=subject1;
-        this.subject2=subject2;
-        this.subject3=subject3;
-        this.department=department;
-    }
-    void totalCalculation() {
-
-        int totalresult = subject1 + subject2 + subject3;
-        total = Integer.toString(totalresult);
-
+    Student(int rollNumber, String name, int subject1, int subject2, int subject3, Department department) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+        this.subject1 = subject1;
+        this.subject2 = subject2;
+        this.subject3 = subject3;
+        this.department = department;
     }
 
-    String checkTotal() {
+    int totalCalculation() {
+        int total = subject1 + subject2 + subject3;
+        this.total = total;
+        return total;
+    }
+
+    String result() {
         if (subject1 <= 25 || subject2 <= 25 || subject3 <= 25) {
-            Result = "FAIL";
-            return Result;
+            return "FAIL";
+
         } else {
-
-            Result = "PASS";
-            return  Result;
+            return "PASS";
 
         }
 
     }
-    void report(String result){
-        String totals;
-        totals = "-";
-        if (result.equals("FAIL"))
-            total = totals;
-        else
-        {
-            totalCalculation();
-        }
-    }
-
 
     void showDetails() {
         System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3);
-
     }
 
-    void showDetailsWithTotal() {
+    void showDetailsWithTotal(int total) {
         System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total);
-
     }
 
-    void reportStatus() {
-        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total + "   \t" + Result);
-
+    void reportStatus(String total, String result) {
+        System.out.println("\n\t" + rollNumber + "   \t" + name + "  \t" + subject1 + "  \t" + subject2 + "  \t" + subject3 + "   \t" + total + "   \t" + result);
     }
 }
