@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c871fd-4d84-48fa-a0c5-610cb9497954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/StudentReport/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StudentReport/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StudentReport/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StudentReport/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StudentReport/ShowReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StudentReport/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StudentReport/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="810">
+              <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +38,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="13">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/javaPracticeProblem/reverse_star_pattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -75,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="495">
               <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
@@ -153,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/com/company/StudentReport/ShowReport.java" />
         <option value="$PROJECT_DIR$/src/com/company/StudentReport/Student.java" />
         <option value="$PROJECT_DIR$/src/com/company/StudentReport/Department.java" />
+        <option value="$PROJECT_DIR$/src/com/company/javaPracticeProblem/reverse_star_pattern.java" />
         <option value="$PROJECT_DIR$/src/com/company/StudentReport/Application.java" />
         <option value="$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java" />
       </list>
@@ -390,8 +397,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="180" y="23" width="1260" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3136289" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3136289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,12 +408,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.27951807" />
-      <window_info active="true" anchor="bottom" content_ui="combo" id="Run" order="2" visible="true" weight="0.40141845" />
+      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" visible="true" weight="0.40141845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.04255319" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36595744" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7858156" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.25106382" />
@@ -659,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/javaPracticeProblem/reverse_star_pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/javaPracticeProblem/book_exrecise_print_content.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -750,10 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/javaPracticeProblem/reverse_star_pattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -764,20 +765,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="810">
+          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/StudentReport/ReportDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
         </state>
       </provider>
     </entry>

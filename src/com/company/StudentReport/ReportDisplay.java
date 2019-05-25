@@ -54,7 +54,12 @@ class ReportDisplay {
     }
 
     void reportStatus(Student student) {
-        System.out.println("\n\t" + student.rollNumber + "   \t" + student.name + "  \t" + student.subject1 + "  \t" + student.subject2 + "  \t" + student.subject3 + "   \t" + student.totalCalculation() + "   \t" + student.result());
+        if (student.result().equals("PASS")) {
+            System.out.println("\n\t" + student.rollNumber + "   \t" + student.name + "  \t" + student.subject1 + "  \t" + student.subject2 + "  \t" + student.subject3 + "   \t" + student.totalCalculation() + "   \t" + student.result());
+        } else {
+            String totals="-";
+            System.out.println("\n\t" + student.rollNumber + "   \t" + student.name + "  \t" + student.subject1 + "  \t" + student.subject2 + "  \t" + student.subject3 + "   \t" + totals + "   \t" + student.result());
+        }
     }
 
     void displayWithResult(Student[] students) {

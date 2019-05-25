@@ -52,8 +52,7 @@ public class Application {
         System.out.println("1 .Display students mark ");
         System.out.println("2 .Display student mark with total");
         System.out.println("3 .Display student mark with total and result");
-        System.out.println("4 .Display student report for department cse");
-        System.out.println("5 .Display student report for department eee");
+        System.out.println("4 .Display student report");
         System.out.print("enter the your choice :");
         int studentDetails1 = keyboards.nextInt();
         List<Student> departCSE = findStudents(students, "cse", "chandra");
