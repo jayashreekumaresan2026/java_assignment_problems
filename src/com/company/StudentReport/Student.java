@@ -9,7 +9,6 @@ public class Student {
     int subject1;
     int subject2;
     int subject3;
-    int total;
     Department department;
 
 
@@ -24,14 +23,12 @@ public class Student {
 
     int totalCalculation() {
         int total = subject1 + subject2 + subject3;
-        this.total = total;
         return total;
     }
 
     String result() {
         if (subject1 <= 25 || subject2 <= 25 || subject3 <= 25) {
             return "FAIL";
-
         } else {
             return "PASS";
 

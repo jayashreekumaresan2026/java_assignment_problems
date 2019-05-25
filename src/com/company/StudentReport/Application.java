@@ -11,7 +11,7 @@ public class Application {
     static List<Student> findStudents(Student[] students, String dept,String HOD) {
         List<Student> s = new ArrayList<>();
         for (int i = 0; i < students.length; i++) {
-            if (students[i].department.getDepartmentName().equals(dept) && students[i].department.getHODName().equals(HOD)) {
+            if (students[i].department.departmentName.equals(dept) && students[i].department.HODName.equals(HOD)) {
                 s.add(students[i]);
             }
 
@@ -38,95 +38,27 @@ public class Application {
 
 
     public static void main(String[] args) {
-        int total=0;
-        String result=" ";
-        String totals=" ";
         Scanner keyboards = new Scanner(System.in);
         System.out.print("enter the number of student :");
         int studentDetails = keyboards.nextInt();
         Student[] students = new Student[studentDetails];
-        ShowReport reports=new ShowReport();
-
-
+        ReportDisplay reports=new ReportDisplay();
         for (int i = 0; i < students.length; i++) {
             System.out.print("enter the detail of the student :");
             Student studentDetail = Application.userInput();
             students[i] = studentDetail;
-
-            total= students[i].totalCalculation();
-            result = students[i].result();
-            if (result.equals("PASS")) {
-                total= students[i].totalCalculation();
-                totals = Integer.toString(total);
-            } else
-            {
-                totals="-";
-            }
-
-
         }
-
-        System.out.println("           Student Records with Marks");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3 ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
-        for (int i = 0; i < students.length; i++) {
-            reports.showDetails(students[i]);
-        }
-
-        System.out.println();
-        System.out.println("           Student Records With Total ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3    Total");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
-        for (int i = 0; i < students.length; i++) {
-            reports.showDetailsWithTotal(total,students[i]);
-        }
-
-        System.out.println();
-        System.out.println("           Student Records With Report ");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(" RollNumber   Name   sub1    sub2    sub3    Total  Result");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        for (int i = 0; i < students.length; i++) {
-            reports.reportStatus(totals,result,students[i]);
-        }
-
-
-        List<Student> departCSE = Application.findStudents(students, "cse", "chandra");
-        if(departCSE.size()>0) {
-            System.out.println();
-
-            System.out.println();
-            System.out.println("           Student Records With Report");
-            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            System.out.println(" RolNumber   Name   sub1    sub2    sub3    Total  Result  ");
-            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            System.out.println("Department :CSE");
-            System.out.println("HOD:Chandra");
-            for (int i = 0; i < departCSE.size(); i++) {
-               reports.reportStatus(totals,result,students[i]);
-
-            }
-        }
-
-        List<Student> departEEE = Application.findStudents(students, "eee", "siva");
-        if (departEEE.size() > 0) {
-            System.out.println();
-            System.out.println("           Student Records With Report");
-            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            System.out.println(" RolNumber   Name   sub1    sub2    sub3    Total  Result  ");
-            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            System.out.println("Department :EEE");
-            System.out.println("H0D:Siva");
-            for (int i = 0; i < departEEE.size(); i++) {
-                reports.reportStatus(totals,result,students[i]);
-
-            }
-        }
-
+        System.out.println("choice your option");
+        System.out.println("1 .Display students mark ");
+        System.out.println("2 .Display student mark with total");
+        System.out.println("3 .Display student mark with total and result");
+        System.out.println("4 .Display student report for department cse");
+        System.out.println("5 .Display student report for department eee");
+        System.out.print("enter the your choice :");
+        int studentDetails1 = keyboards.nextInt();
+        List<Student> departCSE = findStudents(students, "cse", "chandra");
+        List<Student> departEEE = findStudents(students, "eee", "siva");
+        reports.reportdisplay(students,departCSE,departEEE,studentDetails1);
 
     }
 }
