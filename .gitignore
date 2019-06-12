@@ -2,6 +2,4 @@
 
 out/
 
-*.class
-
-*.iml
+java_assignment_problems.iml
