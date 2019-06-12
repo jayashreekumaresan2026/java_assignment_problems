@@ -1,16 +1,17 @@
 package com.company.javaPracticeProblem;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 
 public class sorting_bubble_sort {
 
-     static void sorting_function(int[] array_elements) {
+    static void sorting_function(int[] array_elements) {
         int i, j, temp;
         int l = array_elements.length;
-        for (i = 0; i <l; i++) {
-            for (j = i; j <l-i; j++) {
-                if (array_elements[i] >array_elements[j]) {
+        for (i = 0; i < l; i++) {
+            for (j = i; j < l - i; j++) {
+                if (array_elements[i] > array_elements[j]) {
                     temp = array_elements[i];
                     array_elements[i] = array_elements[j];
                     array_elements[j] = temp;
@@ -18,6 +19,7 @@ public class sorting_bubble_sort {
             }
         }
     }
+
     public static void main(String[] args) {
         int number, i;
         System.out.print("enter the number :");
