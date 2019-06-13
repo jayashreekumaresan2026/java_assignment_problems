@@ -22,6 +22,7 @@ class SelectItemsForBuy {
 
 public class ElectronicShop {
     public static void main(String[] args) {
+        ElectronicShop electronicShop=new ElectronicShop();
         SelectItemsForBuy selectItemsForBuy = new SelectItemsForBuy();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the budget, number of items in the first list and second list :");
@@ -30,13 +31,13 @@ public class ElectronicShop {
         int budget = Integer.parseInt(arrayList.get(0));
         int firstItemNumber = Integer.parseInt(arrayList.get(1));
         int secondItemNumber = Integer.parseInt(arrayList.get(2));
-        List<Integer> firstList = getFirstList(scanner, firstItemNumber);
-        List<Integer> secondList = getSecondList(scanner, secondItemNumber);
+        List<Integer> firstList = electronicShop.getFirstList(scanner, firstItemNumber);
+        List<Integer> secondList = electronicShop.getSecondList(scanner, secondItemNumber);
         int maxValue = selectItemsForBuy.selectItemForBuy(budget, firstList, secondList);
         System.out.println("Final budget cost: " + maxValue);
     }
 
-    private static List<Integer> getSecondList(Scanner scanner, int secondItemNumber) {
+     List<Integer> getSecondList(Scanner scanner, int secondItemNumber) {
         System.out.println("Enter the items in the secondList");
         List<Integer> secondList = new ArrayList<>();
         for (int j = 0; j < secondItemNumber; j++) {
@@ -46,7 +47,7 @@ public class ElectronicShop {
         return secondList;
     }
 
-    private static List<Integer> getFirstList(Scanner scanner, int firstItemNumber) {
+     List<Integer> getFirstList(Scanner scanner, int firstItemNumber) {
         System.out.println("Enter the items in the firstList");
         List<Integer> firstList = new ArrayList<>();
         for (int i = 0; i < firstItemNumber; i++) {
