@@ -17,7 +17,6 @@ class GamesCalculation {
             count = count + 1;
             sum += discountLimit;
         }
-
         return count;
     }
 }
